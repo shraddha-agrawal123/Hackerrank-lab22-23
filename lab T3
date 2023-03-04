@@ -1,0 +1,118 @@
+You want some loan and a bank is ready to give you loan on simple interest. It is given that when you will return the amount,
+you will return amount which is twice of principal amount. Bank has given you rate R . 
+You have to find the time after which you will be returning the total amount
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+float r,t;
+scanf("%f",&r);
+  //  p=1.0;
+    t=100/r;
+    printf("%.2f",t);
+    return 0;
+}
+
+
+                                                       Hello Me 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+  char n[20];
+    scanf("%s",n);
+    printf("Welcome %s",n);
+    return 0;
+}
+
+                                                     Wonderful Chocolate Offer
+You have a uncle who daily gives you D chocolates upto N days. Also you have C chocolates already but your parents allow only to eat one chocolate per day. 
+Calculate the total chocolates at the end of N days.
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+int d,n,c;
+    scanf("%d%d%d",&c,&n,&d);
+    int t=((d*n+c)-n);
+    printf("%d",t);
+    return 0;
+}  
+                                                   Compound For Two Years
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+float P,R,C,A;
+    int T=2;
+    scanf("%f%f",&P,&R);
+    A=P*pow((1+R*0.01),T);
+    C=A-P;
+    printf("%.2f",C);
+    return 0;
+}
+                                                   Ant Consensus
+
+
+There is a group of ant which on the start of day makes itself K times, it was previous day. Initially its count was C. You have to find its population on N th day.
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int N,K,C;
+    scanf("%d\n%d\n%d",&C,&K,&N);
+     long long int t=pow(K,N)*C;
+    printf("%lli",t);
+    return 0;
+}
+
+                                                       Encoded Name
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int n1,n2,n3,n4,n5;
+    scanf("%d&%d&%d&%d&%d",&n1,&n2,&n3,&n4,&n5);
+    printf("%c%c%c%c%c",n1,n2,n3,n4,n5);
+    return 0;
+}
+
+                                                      Leap years 2
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int  y,i;
+    scanf("%d",&y);
+    for(i=1;i<=y;i++){
+        if((i%400==0)||(i%4==0&&i%100!=0)){
+            printf("%d ",i);
+        }
+    }
+    return 0;
+}
